@@ -1,0 +1,21 @@
+.parent-component-heading {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.parent-component-container {
+  border: "10px solid red";
+}
+.input-message {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 200px;
+}
+.submit-button {
+  background-color: rgb(25, 25, 196);
+  padding: 4px;
+  border-radius: 10px;
+  color: white;
+  margin: 2px;
+}

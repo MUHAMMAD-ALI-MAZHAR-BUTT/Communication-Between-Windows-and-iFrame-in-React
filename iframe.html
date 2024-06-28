@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframe Content</title>
+    <script>
+      window.addEventListener("message", (event) => {
+        if (event.origin !== "http://localhost:3000") return; // Ensure it's from the expected origin
+        console.log("Message received from parent:", event.data);
+
+        // Send a response back to the parent
+        event.source.postMessage("Hello from iFrame!", event.origin);
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Iframe Content</h1>
+  </body>
+</html>
